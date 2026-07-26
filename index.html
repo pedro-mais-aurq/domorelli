@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domorelli Steakhouse | Carnes na Brasa em Varzelândia</title>
+  <meta name="description" content="Domorelli Steakhouse: carnes na brasa em Varzelândia, MG. Veja o cardápio digital e peça pelo WhatsApp.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0b09">
+
+  <!-- TODO: definir o domínio final do site antes de publicar. -->
+  <!-- TODO: quando o domínio estiver confirmado, adicionar aqui: -->
+  <!-- <link rel="canonical" href="https://SEU-DOMINIO-AQUI/"> -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Domorelli Steakhouse">
+  <meta property="og:title" content="Domorelli Steakhouse | Carnes na Brasa em Varzelândia">
+  <meta property="og:description" content="Carnes na brasa, sabor direto e uma mesa feita para reunir. Confira o cardápio e peça pelo WhatsApp.">
+  <meta property="og:image" content="assets/images/logo-domorelli.png">
+  <meta property="og:locale" content="pt_BR">
+  <!-- TODO: adicionar "og:url" com a URL final assim que o domínio for confirmado. -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Domorelli Steakhouse | Carnes na Brasa em Varzelândia">
+  <meta name="twitter:description" content="Carnes na brasa, sabor direto e uma mesa feita para reunir, em Varzelândia.">
+  <meta name="twitter:image" content="assets/images/logo-domorelli.png">
+
+  <!-- TODO: nenhum favicon adequado disponível ainda. Adicionar assim que houver um ícone em alta resolução. -->
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Domorelli Steakhouse",
+    "telephone": "+55 38 99127-6369",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Varzelândia",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/domorellisteakhouse/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Vinheta de abertura: somente HTML/CSS + JS mínimo. Oculta por padrão; só o main.js ativa. -->
+  <div id="intro" class="intro" hidden aria-hidden="true">
+    <div class="intro__plate">
+      <div class="intro__ember" aria-hidden="true"></div>
+      <img src = "assets/images/logo-domorelli.png" class="intro__mark">
+    </div>
+    <button type="button" id="intro-skip" class="intro__skip">Pular introdução</button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#inicio" aria-label="Domorelli Steakhouse, início">
+        <img
+          src="assets/images/logo-domorelli.png"
+          alt="Domorelli Steakhouse"
+          width="180"
+          height="72"
+          class="site-header__logo"
+        >
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        data-nav-toggle
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        <span class="nav-toggle__box" aria-hidden="true">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Navegação principal">
+        <ul class="site-nav__list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+        <a
+          class="btn btn--ember site-nav__cta"
+          href="https://wa.me/5538991276369?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Domorelli%20Steakhouse%20e%20gostaria%20de%20fazer%20um%20pedido."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pedir pelo WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero__scene" aria-hidden="true">
+        <div class="hero__plate"></div>
+        <div class="hero__ember hero__ember--a"></div>
+        <div class="hero__ember hero__ember--b"></div>
+      </div>
+      <div class="hero__inner container">
+        <p class="eyebrow">Domorelli Steakhouse — Varzelândia, MG</p>
+        <h1 class="hero__title">Fogo alto.<br>Corte certo.</h1>
+        <p class="hero__lede">
+          Carnes na brasa, sabor direto e uma mesa feita para reunir.
+          Domorelli Steakhouse, em Varzelândia.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--ember" href="#cardapio">Ver cardápio</a>
+          <a
+            class="btn btn--outline"
+            href="https://wa.me/5538991276369?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Domorelli%20Steakhouse%20e%20gostaria%20de%20fazer%20um%20pedido."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="highlights" aria-labelledby="highlights-title">
+      <h2 id="highlights-title" class="sr-only">Diferenciais</h2>
+      <div class="container highlights__grid">
+        <article class="highlight">
+          <span class="highlight__index" aria-hidden="true">01</span>
+          <p class="highlight__text">Cortes feitos para a brasa</p>
+        </article>
+        <article class="highlight">
+          <span class="highlight__index" aria-hidden="true">02</span>
+          <p class="highlight__text">Sabores para compartilhar</p>
+        </article>
+        <article class="highlight">
+          <span class="highlight__index" aria-hidden="true">03</span>
+          <p class="highlight__text">Do fogo direto à mesa</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cortes da casa -->
+    <section class="signature" aria-labelledby="signature-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Selecionados da brasa</p>
+          <h2 id="signature-title">Cortes da casa</h2>
+        </div>
+        <ul class="signature__list">
+          <li class="signature__item">
+            <p class="signature__name">Bife ancho, 350 g</p>
+            <p class="signature__desc">Corte suculento grelhado no ponto, servido com farofa e vinagrete.</p>
+            <data class="signature__price" value="79.00">R$ 79,00</data>
+          </li>
+          <li class="signature__item">
+            <p class="signature__name">Prime rib, 600 g</p>
+            <p class="signature__desc">Corte generoso, grelhado na brasa e finalizado na manteiga de ervas.</p>
+            <data class="signature__price" value="119.00">R$ 119,00</data>
+          </li>
+          <li class="signature__item">
+            <p class="signature__name">Costela de tira, 450 g</p>
+            <p class="signature__desc">Costela grelhada lentamente até soltar do osso.</p>
+            <data class="signature__price" value="88.00">R$ 88,00</data>
+          </li>
+          <li class="signature__item">
+            <p class="signature__name">Domorelli Brasa</p>
+            <p class="signature__desc">Sanduíche de carne grelhada, queijo e molho da casa no pão amanteigado.</p>
+            <data class="signature__price" value="42.00">R$ 42,00</data>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cardápio digital -->
+    <section id="cardapio" class="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Cardápio digital</p>
+          <h2 id="menu-title">Tudo pronto para a brasa</h2>
+          <p class="menu__intro">
+            Navegue pelas categorias abaixo. Itens marcados como
+            <span class="badge">destaque</span> são os mais pedidos da casa.
+          </p>
+        </div>
+
+        <nav class="menu__categories" aria-label="Categorias do cardápio">
+          <ul>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#cortes">Cortes</a></li>
+            <li><a href="#sanduiches">Sanduíches</a></li>
+            <li><a href="#acompanhamentos">Acompanhamentos</a></li>
+            <li><a href="#sobremesas">Sobremesas</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+          </ul>
+        </nav>
+
+        <!-- MENU DEMONSTRATIVO: INÍCIO -->
+
+        <div class="menu__category" id="entradas">
+          <h3 class="menu__category-title">Entradas</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Pão de alho da casa</p>
+                <data class="menu__item-price" value="18.00">R$ 18,00</data>
+              </div>
+              <p class="menu__item-desc">Pão levemente tostado na brasa, manteiga de alho e ervas frescas.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Provoleta braseada</p>
+                <data class="menu__item-price" value="34.00">R$ 34,00</data>
+              </div>
+              <p class="menu__item-desc">Queijo provolone grelhado até dourar, com toque de orégano.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Linguiça artesanal</p>
+                <data class="menu__item-price" value="32.00">R$ 32,00</data>
+              </div>
+              <p class="menu__item-desc">Linguiça grelhada na brasa, servida em rodelas com pão.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category" id="cortes">
+          <h3 class="menu__category-title">Cortes</h3>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--highlight">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Bife ancho, 350 g <span class="badge">destaque</span></p>
+                <data class="menu__item-price" value="79.00">R$ 79,00</data>
+              </div>
+              <p class="menu__item-desc">Corte suculento grelhado no ponto, servido com farofa e vinagrete.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Bife de chorizo, 350 g</p>
+                <data class="menu__item-price" value="76.00">R$ 76,00</data>
+              </div>
+              <p class="menu__item-desc">Corte macio e saboroso, direto da brasa para o prato.</p>
+            </li>
+            <li class="menu__item menu__item--highlight">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Costela de tira, 450 g <span class="badge">destaque</span></p>
+                <data class="menu__item-price" value="88.00">R$ 88,00</data>
+              </div>
+              <p class="menu__item-desc">Costela grelhada lentamente até soltar do osso.</p>
+            </li>
+            <li class="menu__item menu__item--highlight">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Prime rib, 600 g <span class="badge">destaque</span></p>
+                <data class="menu__item-price" value="119.00">R$ 119,00</data>
+              </div>
+              <p class="menu__item-desc">Corte generoso, grelhado na brasa e finalizado na manteiga de ervas.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category" id="sanduiches">
+          <h3 class="menu__category-title">Sanduíches</h3>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--highlight">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Domorelli Brasa <span class="badge">destaque</span></p>
+                <data class="menu__item-price" value="42.00">R$ 42,00</data>
+              </div>
+              <p class="menu__item-desc">Sanduíche de carne grelhada, queijo e molho da casa no pão amanteigado.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Burger Bacon Ember</p>
+                <data class="menu__item-price" value="46.00">R$ 46,00</data>
+              </div>
+              <p class="menu__item-desc">Hambúrguer artesanal com bacon crocante e queijo derretido.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category" id="acompanhamentos">
+          <h3 class="menu__category-title">Acompanhamentos</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Arroz biro-biro</p>
+                <data class="menu__item-price" value="24.00">R$ 24,00</data>
+              </div>
+              <p class="menu__item-desc">Arroz soltinho com bacon e ovos, tempero da casa.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Legumes na brasa</p>
+                <data class="menu__item-price" value="22.00">R$ 22,00</data>
+              </div>
+              <p class="menu__item-desc">Seleção de legumes grelhados no calor da brasa.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Farofa da casa</p>
+                <data class="menu__item-price" value="16.00">R$ 16,00</data>
+              </div>
+              <p class="menu__item-desc">Farofa crocante feita na manteiga, receita da casa.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category" id="sobremesas">
+          <h3 class="menu__category-title">Sobremesas</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Brownie com doce de leite</p>
+                <data class="menu__item-price" value="26.00">R$ 26,00</data>
+              </div>
+              <p class="menu__item-desc">Brownie de chocolate quente com doce de leite.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Pudim da casa</p>
+                <data class="menu__item-price" value="18.00">R$ 18,00</data>
+              </div>
+              <p class="menu__item-desc">Pudim de leite cremoso, feito na casa.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__category" id="bebidas">
+          <h3 class="menu__category-title">Bebidas</h3>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Caipirinha clássica</p>
+                <data class="menu__item-price" value="24.00">R$ 24,00</data>
+              </div>
+              <p class="menu__item-desc">Cachaça, limão e açúcar, preparada na hora.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Refrigerante</p>
+                <data class="menu__item-price" value="8.00">R$ 8,00</data>
+              </div>
+              <p class="menu__item-desc">Opções geladas, consulte sabores disponíveis.</p>
+            </li>
+            <li class="menu__item">
+              <div class="menu__item-head">
+                <p class="menu__item-name">Água</p>
+                <data class="menu__item-price" value="5.00">R$ 5,00</data>
+              </div>
+              <p class="menu__item-desc">Água mineral, com ou sem gás.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MENU DEMONSTRATIVO: FIM -->
+
+        <p class="menu__disclaimer">Cardápio demonstrativo. Itens, valores e disponibilidade podem mudar.</p>
+      </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experiencia" class="experience">
+      <div class="container experience__inner">
+        <p class="eyebrow">Experiência</p>
+        <p class="experience__quote">“A brasa dita o ritmo.<br>A mesa faz o resto.”</p>
+        <p class="experience__text">
+          Um ambiente pensado para encontros longos, conversas boas e carne no ponto certo.
+          Sem pressa, sem fórmula pronta — só fogo, tempo e companhia.
+        </p>
+      </div>
+    </section>
+
+    <!-- Localização e contato -->
+    <section id="localizacao" class="contact">
+      <div class="container contact__inner">
+        <div class="section-head">
+          <p class="eyebrow">Localização e contato</p>
+          <h2>Varzelândia — MG</h2>
+        </div>
+        <p class="contact__note">Endereço e horários: confirme pelo WhatsApp.</p>
+
+        <ul class="contact__list">
+          <li class="contact__item">
+            <span class="contact__label">Telefone / WhatsApp</span>
+            <a href="https://wa.me/5538991276369?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Domorelli%20Steakhouse%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">
+              (38) 99127-6369
+            </a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">Instagram</span>
+            <a href="https://www.instagram.com/domorellisteakhouse/" target="_blank" rel="noopener noreferrer">
+              @domorellisteakhouse
+            </a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__label">Localização</span>
+            <a href="https://www.google.com/maps/search/?api=1&query=Domorelli%20Steakhouse%2C%20Varzel%C3%A2ndia%2C%20MG" target="_blank" rel="noopener noreferrer">
+              Ver no Google Maps
+            </a>
+          </li>
+        </ul>
+
+        <a
+          class="btn btn--ember contact__cta"
+          href="https://wa.me/5538991276369?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Domorelli%20Steakhouse%20e%20gostaria%20de%20fazer%20um%20pedido."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reservar pelo WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <img
+        src="assets/images/logo-domorelli.png"
+        alt="Domorelli Steakhouse"
+        width="140"
+        height="56"
+        class="site-footer__logo"
+        loading="lazy"
+      >
+
+      <ul class="site-footer__list">
+        <li>Varzelândia — MG</li>
+        <li><a href="https://wa.me/5538991276369?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Domorelli%20Steakhouse%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer">(38) 99127-6369</a></li>
+        <li><a href="https://www.instagram.com/domorellisteakhouse/" target="_blank" rel="noopener noreferrer">@domorellisteakhouse</a></li>
+      </ul>
+
+      <nav class="site-footer__nav" aria-label="Navegação do rodapé">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+
+      <p class="site-footer__copy">
+        © <span data-year>2026</span> Domorelli Steakhouse. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a
+    class="whatsapp-fab"
+    href="https://wa.me/5538991276369?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Domorelli%20Steakhouse%20e%20gostaria%20de%20fazer%20um%20pedido."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chamar a Domorelli Steakhouse no WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.1c1.9 1.1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5C28.7 8.6 23 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.2 1.2-4-.3-.4a10.2 10.2 0 0 1-1.6-5.4c0-5.7 4.7-10.3 10.6-10.3s10.6 4.6 10.6 10.3S21.9 25.8 16 25.8zm5.8-7.7c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+    <span class="sr-only">Chamar no WhatsApp</span>
+  </a>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
