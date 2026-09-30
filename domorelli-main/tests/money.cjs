@@ -1,0 +1,3 @@
+const {readFileSync}=require('node:fs');const vm=require('node:vm');const assert=require('node:assert/strict');const context={window:{DOMORELLI_CONFIG:{}},Intl};vm.runInNewContext(readFileSync('assets/js/data.js','utf8'),context);const {parsePrice,formatPrice}=context.window.Domorelli;
+for(const [text,expected] of [['13,00',1300],['52.90',5290],['0',0],['25,9',2590],['',null]])assert.equal(parsePrice(text),expected);
+for(const text of ['-1','NaN','1.000,00','1.999','21474836,48'])assert.throws(()=>parsePrice(text));assert.equal(formatPrice(null),'Sob consulta');console.log('PASS: centavos exatos, preço nulo e rejeição de entradas inválidas.');

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domorelli Steakhouse | Carnes na Brasa em Varzelândia</title>
+  <meta name="description"
+    content="Domorelli Steakhouse: carnes na brasa em Varzelândia, MG. Veja o cardápio digital e peça pelo WhatsApp.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0b09">
+
+  <!-- TODO: definir o domínio final do site antes de publicar. -->
+  <!-- TODO: quando o domínio estiver confirmado, adicionar aqui: -->
+  <!-- <link rel="canonical" href="https://SEU-DOMINIO-AQUI/"> -->
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Domorelli Steakhouse">
+  <meta property="og:title" content="Domorelli Steakhouse | Carnes na Brasa em Varzelândia">
+  <meta property="og:description"
+    content="Carnes na brasa, sabor direto e uma mesa feita para reunir. Confira o cardápio e peça pelo WhatsApp.">
+  <meta property="og:image" content="assets/images/logo-domorelli.png">
+  <meta property="og:locale" content="pt_BR">
+  <!-- TODO: adicionar "og:url" com a URL final assim que o domínio for confirmado. -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Domorelli Steakhouse | Carnes na Brasa em Varzelândia">
+  <meta name="twitter:description"
+    content="Carnes na brasa, sabor direto e uma mesa feita para reunir, em Varzelândia.">
+  <meta name="twitter:image" content="assets/images/logo-domorelli.png">
+
+  <!-- TODO: nenhum favicon adequado disponível ainda. Adicionar assim que houver um ícone em alta resolução. -->
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" size="64x64" href="assets/images/domorelli_log.svg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Domorelli Steakhouse",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Varzelândia",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/domorellisteakhouse/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Vinheta de abertura: somente HTML/CSS + JS mínimo. Oculta por padrão; só o main.js ativa. -->
+  <div id="intro" class="intro" hidden aria-hidden="true">
+    <div class="intro__plate">
+      <div class="intro__ember" aria-hidden="true"></div>
+      <img src="assets/images/domorelli_log.svg" class="intro__mark">
+    </div>
+    <button type="button" id="intro-skip" class="intro__skip">Pular introdução</button>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="#inicio" aria-label="Domorelli Steakhouse, início">
+        <img src="assets/images/domorelli_logo_completa.svg" alt="Domorelli Steakhouse" width="180" height="72"
+          class="site-header__logo">
+      </a>
+
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        <span class="nav-toggle__box" aria-hidden="true">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </span>
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" data-nav aria-label="Navegação principal">
+        <ul class="site-nav__list">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+        <a class="btn btn--ember site-nav__cta"
+          href="#localizacao" data-whatsapp
+          target="_blank" rel="noopener noreferrer">
+          Pedir pelo WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero__scene" aria-hidden="true">
+        <div class="hero__plate"></div>
+        <div class="hero__ember"></div>
+      </div>
+      <div class="container hero__inner">
+        <p class="eyebrow">Domorelli Steakhouse — Varzelândia, MG</p>
+        <h1 class="hero__title">Fogo alto,<br>Corte certo.</h1>
+        <p class="hero__lede">
+          Carnes na brasa, sabor direto e uma mesa feita para reunir.
+          Domorelli Steakhouse, em Varzelândia.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--ember" href="#cardapio">Ver cardápio</a>
+          <a class="btn btn--outline"
+            href="#localizacao" data-whatsapp
+            target="_blank" rel="noopener noreferrer">
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section class="highlights" aria-labelledby="highlights-title">
+      <h2 id="highlights-title" class="sr-only">Diferenciais</h2>
+      <div class="container highlights__grid">
+        <article class="highlight">
+          <span class="highlight__index" aria-hidden="true">01</span>
+          <p class="highlight__text">Cortes feitos para a brasa</p>
+        </article>
+        <article class="highlight">
+          <span class="highlight__index" aria-hidden="true">02</span>
+          <p class="highlight__text">Sabores para compartilhar</p>
+        </article>
+        <article class="highlight">
+          <span class="highlight__index" aria-hidden="true">03</span>
+          <p class="highlight__text">Do fogo direto à mesa</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cortes da casa -->
+    <section class="signature" aria-labelledby="signature-title" hidden>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Destaques da casa</p>
+          <h2 id="signature-title">Cortes da casa</h2>
+        </div>
+
+        <ul class="signature__list"></ul>
+      </div>
+    </section>
+
+    <!-- Cardápio digital -->
+    <section id="cardapio" class="menu" aria-labelledby="menu-title">
+      <div class="container"><div class="section-head"><p class="eyebrow">Cardápio digital</p><h2 id="menu-title">Tudo pronto para a brasa</h2><p class="menu__intro">Navegue pelas categorias e confira nossos pratos, lanches e bebidas.</p></div>
+      <nav class="menu__categories" aria-label="Categorias do cardápio"><ul></ul></nav>
+      <p id="menu-status" role="status">Carregando cardápio…</p><button id="menu-retry" class="btn btn--outline" type="button" hidden>Tentar novamente</button><noscript>Ative o JavaScript para consultar o cardápio atualizado.</noscript><div id="products"></div>
+      </div>
+    </section>
+
+        <!-- Experiência -->
+        <section id="experiencia" class="experience">
+          <div class="container experience__inner">
+            <p class="eyebrow">Experiência</p>
+            <p class="experience__quote">“A brasa dita o ritmo.<br>A mesa faz o resto.”</p>
+            <p class="experience__text">
+              Um ambiente pensado para encontros longos, conversas boas e carne no ponto certo.
+              Sem pressa, sem fórmula pronta — só fogo, tempo e companhia.
+            </p>
+          </div>
+        </section>
+
+        <!-- Localização e contato -->
+        <section id="localizacao" class="contact">
+          <div class="container contact__inner">
+            <div class="section-head">
+              <p class="eyebrow">Localização e contato</p>
+              <h2>Varzelândia — MG</h2>
+            </div>
+            <p class="contact__note">Endereço e horários: confirme pelo WhatsApp.</p>
+
+            <ul class="contact__list">
+              <li class="contact__item">
+                <span class="contact__label">Telefone / WhatsApp</span>
+                <a href="#localizacao" data-whatsapp
+                  target="_blank" rel="noopener noreferrer">
+                  <span data-phone></span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <span class="contact__label">Instagram</span>
+                <a href="https://www.instagram.com/domorellisteakhouse/" target="_blank" rel="noopener noreferrer">
+                  @domorellisteakhouse
+                </a>
+              </li>
+              <li class="contact__item">
+                <span class="contact__label">Localização</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Domorelli%20Steakhouse%2C%20Varzel%C3%A2ndia%2C%20MG"
+                  target="_blank" rel="noopener noreferrer">
+                  Ver no Google Maps
+                </a>
+              </li>
+            </ul>
+
+            <a class="btn btn--ember contact__cta"
+              href="#localizacao" data-whatsapp
+              target="_blank" rel="noopener noreferrer">
+              Reservar pelo WhatsApp
+            </a>
+          </div>
+        </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <img src="assets/images/logo-domorelli.png" alt="Domorelli Steakhouse" width="140" height="56"
+        class="site-footer__logo" loading="lazy">
+
+      <ul class="site-footer__list">
+        <li>Varzelândia — MG</li>
+        <li><a
+            href="#localizacao" data-whatsapp
+            target="_blank" rel="noopener noreferrer"><span data-phone></span></a></li>
+        <li><a href="https://www.instagram.com/domorellisteakhouse/" target="_blank"
+            rel="noopener noreferrer">@domorellisteakhouse</a></li>
+      </ul>
+
+      <nav class="site-footer__nav" aria-label="Navegação do rodapé">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+
+      <p class="site-footer__copy">
+        © <span data-year>2026</span> Domorelli Steakhouse. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a class="whatsapp-fab"
+    href="#localizacao" data-whatsapp
+    target="_blank" rel="noopener noreferrer" aria-label="Chamar a Domorelli Steakhouse no WhatsApp">
+    <svg viewBox="0 0 32 32" width="24" height="24" aria-hidden="true" focusable="false">
+      <path fill="currentColor"
+        d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.1c1.9 1.1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.5C28.7 8.6 23 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.2 1.2-4-.3-.4a10.2 10.2 0 0 1-1.6-5.4c0-5.7 4.7-10.3 10.6-10.3s10.6 4.6 10.6 10.3S21.9 25.8 16 25.8zm5.8-7.7c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.2 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z" />
+    </svg>
+    <span class="sr-only">Chamar no WhatsApp</span>
+  </a>
+
+  <button type="button" id="cart-open" class="btn btn--ember cart-launcher" aria-controls="cart-dialog" aria-haspopup="dialog" aria-expanded="false" hidden>
+    Carrinho (<span id="cart-count">0</span>)
+  </button>
+  <p id="cart-feedback" class="sr-only" role="status" aria-live="polite"></p>
+  <dialog id="cart-dialog" class="cart" aria-labelledby="cart-title">
+    <div class="cart__header"><div><p class="eyebrow">Domorelli Steakhouse</p><h2 id="cart-title">Seu pedido</h2></div>
+      <button type="button" id="cart-close" class="cart-control" aria-label="Fechar carrinho">×</button>
+    </div>
+    <div class="cart__body">
+      <p id="cart-empty">Seu carrinho está vazio.</p>
+      <ul id="cart-items" class="cart-items"></ul>
+      <p id="cart-status" class="cart-status" role="status" aria-live="polite"></p>
+      <p id="cart-storage" class="cart-note" hidden>O navegador não permitiu salvar o carrinho. Seu pedido ficará disponível somente nesta página.</p>
+      <label for="cart-notes" class="cart-label">Observações do pedido <span>(opcional)</span></label>
+      <textarea id="cart-notes" rows="3" maxlength="1000" placeholder="Ex.: sem cebola" aria-describedby="cart-notes-help"></textarea>
+      <p id="cart-notes-help" class="cart-note">As observações ficam somente nesta página.</p>
+    </div>
+    <div class="cart__footer">
+      <p class="cart-total"><span>Total</span><strong id="cart-total">—</strong></p>
+      <button type="button" id="cart-checkout" class="btn btn--ember">Finalizar pelo WhatsApp</button>
+      <button type="button" id="cart-clear" class="btn btn--outline">Limpar carrinho</button>
+    </div>
+  </dialog>
+
+  <script src="assets/js/vendor/supabase.js" defer></script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/menu.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>

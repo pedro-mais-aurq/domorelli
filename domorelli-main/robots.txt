@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: quando o domínio final estiver confirmado e o site publicado,
+# avaliar a necessidade de um sitemap.xml e adicioná-lo aqui.
