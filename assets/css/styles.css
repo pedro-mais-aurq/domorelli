@@ -1083,3 +1083,51 @@ button:focus-visible,
     max-width: 36rem;
   }
 }
+.menu__photo { width: 160px; max-width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 12px; }
+
+/* P2 — catálogo e pedido. Mantém os tokens e a composição da P1. */
+.signature[hidden], .product-image[hidden], .cart-launcher[hidden], #menu-retry[hidden],
+#cart-storage[hidden], #cart-empty[hidden] { display: none !important; }
+.product-content { min-width: 0; flex: 1; }
+.product-content p, .menu__category-title { overflow-wrap: anywhere; }
+.menu__item { display: flex; align-items: flex-start; gap: var(--space-md); }
+.menu__item .product-image { flex: 0 0 136px; width: 136px; }
+.product-image { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-md); background: var(--color-surface-elevated); }
+.product-action { margin-top: var(--space-sm); max-width: 100%; }
+.signature__item .product-content { display: flex; flex-direction: column; align-items: flex-start; }
+.signature__item .product-action { margin-top: auto; align-self: flex-start; }
+.signature__item .signature__desc { margin-block: var(--space-2xs) var(--space-md); max-width: none; }
+.signature__item .signature__price { display: block; margin-bottom: var(--space-sm); }
+#menu-status:not(:empty) { margin-bottom: var(--space-md); }
+.cart-launcher { position: fixed; right: max(1.5rem, env(safe-area-inset-right)); bottom: calc(max(1.5rem, env(safe-area-inset-bottom)) + 64px); z-index: 400; box-shadow: 0 4px 16px #0006; }
+.cart { padding: 0; margin: 0 0 0 auto; inset: 0; width: min(100%, 30rem); max-width: 100%; height: 100%; height: 100dvh; max-height: 100%; border: 0; border-left: 1px solid var(--color-line); background: var(--color-surface); color: var(--color-bone); }
+.cart[open] { display: flex; flex-direction: column; }
+.cart::backdrop { background: #000b; }
+.cart__header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-sm); padding: var(--space-md); border-bottom: 1px solid var(--color-line); }
+.cart__header h2 { font-size: 1.8rem; }
+.cart__body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; padding: var(--space-md); }
+.cart__footer { padding: var(--space-sm) var(--space-md) max(var(--space-md), env(safe-area-inset-bottom)); border-top: 1px solid var(--color-line); display: grid; gap: var(--space-2xs); background: var(--color-surface-elevated); }
+.cart-total { display: flex; flex-wrap: wrap; gap: var(--space-xs); justify-content: space-between; font-size: 1.15rem; margin-bottom: var(--space-2xs); }
+.cart-item { padding-bottom: var(--space-md); margin-bottom: var(--space-md); border-bottom: 1px dashed var(--color-line); overflow-wrap: anywhere; }
+.cart-item__name { font-weight: 700; }
+.cart-item__price { color: var(--color-muted); margin-block: var(--space-2xs) var(--space-xs); font-size: .9rem; }
+.cart-item__controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs); }
+.cart-control { min-width: 44px; min-height: 44px; padding: .5rem .75rem; border: 1px solid var(--color-line); border-radius: var(--radius-sm); }
+.cart-control:hover { border-color: var(--color-brass); }
+.cart-label { display: block; margin: var(--space-md) 0 var(--space-2xs); font-weight: 600; }
+.cart-label span, .cart-note { font-size: .8rem; color: var(--color-muted); font-weight: 400; }
+.cart textarea { display: block; width: 100%; min-height: 88px; resize: vertical; padding: var(--space-xs); font: inherit; font-size: 16px; color: var(--color-bone); background: var(--color-bg); border: 1px solid var(--color-line); border-radius: var(--radius-sm); }
+.cart textarea:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.cart-status { color: var(--color-bone); font-size: .9rem; }
+.cart-status:not(:empty), #cart-storage { margin-block: var(--space-sm); }
+.cart button:disabled { opacity: .5; cursor: not-allowed; }
+@media (max-width: 30rem) {
+  .menu__item { gap: var(--space-sm); flex-wrap: wrap; }
+  .menu__item .product-image { flex-basis: auto; width: 100%; max-width: 100%; }
+  .menu__item .product-content { flex-basis: 100%; }
+  .menu__item-head { flex-wrap: wrap; gap: var(--space-2xs) var(--space-sm); }
+  .signature__item { padding: var(--space-md); min-width: 0; }
+  .cart-launcher { right: max(1rem, env(safe-area-inset-right)); }
+  .cart__header, .cart__body { padding: var(--space-sm); }
+  .cart__footer { padding-inline: var(--space-sm); }
+}

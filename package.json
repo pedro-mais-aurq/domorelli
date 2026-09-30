@@ -3,6 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "test": "node tests/money.cjs && node tests/database.mjs && node tests/public.mjs",
+    "test:browser": "node tests/browser.cjs",
+    "import:menu": "node scripts/import-current-menu.mjs",
+    "test:p2": "node tests/p2-browser.cjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.14",
+    "linkedom": "0.18.12",
+    "playwright": "1.62.1",
+    "supabase": "2.118.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.117.2"
   }
 }

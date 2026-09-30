@@ -9,8 +9,7 @@
  *  3. Ano do rodapé
  *  4. Indicação discreta da seção atual (IntersectionObserver, opcional)
  *
- * Nada aqui cria conteúdo essencial: todo o HTML já existe e funciona
- * sem este arquivo.
+ * O cardápio é carregado separadamente por menu.js a partir do Supabase.
  */
 
 (function () {
